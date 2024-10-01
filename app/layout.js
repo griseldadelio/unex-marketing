@@ -3,45 +3,39 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import WhatsAppButton from './components/Whatsapp';
 
 export const metadata = {
-  title: 'Unex Marketing',
-  description: 'Unex Marketing - Agencia de marketing digital',
+  title: 'Unex Talent | Agencia de Marketing Digital',
+  description:
+    'Unex Talent te ayuda a potenciar tu marca con estrategias de marketing digital y manejo de redes sociales. ¡Aumenta tu visibilidad online con nosotros!',
+
   openGraph: {
-    title: 'Unex Marketing',
-    description: 'Tu agencia de marketing digital',
-    url: 'https://tusitio.com',
-    siteName: 'Unex Marketing',
+    type: 'website',
+    title: 'Unex Talent | Agencia de Marketing Digital',
+    description:
+      'Descubre cómo Unex Talent puede llevar tu negocio al siguiente nivel con estrategias personalizadas en redes sociales, publicidad digital, y más.',
+    url: 'https://unextalent.com',
+    siteName: 'Unex',
+    images: [
+      {
+        url: 'https://unextalent.com/images/unexlogo.png',
+        width: 1200,
+        height: 630,
+        alt: 'Unex Talent - Agencia de Marketing Digital',
+      },
+    ],
   },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Unex Marketing',
-    description: 'Agencia de marketing digital',
+
+  facebook: {
+    url: 'https://www.facebook.com/unextalent',
+    title: 'Unex Talent | Agencia de Marketing Digital',
+    description:
+      'Somos Unex Talent, una agencia de marketing digital que ofrece estrategias personalizadas para aumentar tu presencia en redes sociales.',
+    image: 'https://unextalent.com/images/unexlogo.png', // Reemplaza con tu imagen
   },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>
-        {/* Link de Google Fonts */}
-        <link
-          href="https://fonts.googleapis.com/css2?family=Poppins:wght@1,600&display=swap"
-          rel="stylesheet"
-        />
-        {/* FontAwesome */}
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-        />
-        <link
-          href="https://assets.calendly.com/assets/external/widget.css"
-          rel="stylesheet"
-        />
-        <script
-          src="https://assets.calendly.com/assets/external/widget.js"
-          type="text/javascript"
-          async
-        ></script>
-      </head>
       <body>
         {children}
         <WhatsAppButton />

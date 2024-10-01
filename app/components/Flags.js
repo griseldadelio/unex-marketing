@@ -20,10 +20,10 @@ const Flags = () => {
 
       <div className="marquee1 mb-5">
         <ul className="marquee__content1">
-          <li className="marquee__item1">&nbsp;Let's get creative</li>
+          <li className="marquee__item1">&nbsp;Let&apos;s get creative</li>
           <li className="marquee__item1">&nbsp;Transforma tu marca</li>
           <li className="marquee__item1">&nbsp;Innovemos juntos</li>
-          <li className="marquee__item1">&nbsp;Let's get creative</li>
+          <li className="marquee__item1">&nbsp;Let&apos;s get creative</li>
           <li className="marquee__item1">&nbsp;Transforma tu marca</li>
           <li className="marquee__item1">&nbsp;Innovemos juntos</li>
         </ul>
