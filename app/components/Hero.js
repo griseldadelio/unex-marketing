@@ -55,12 +55,15 @@ const Hero = () => {
           </div>
         </Col>
         <Col sm={12} lg={6} className="position-relative text-center">
-          <div className="parallax-image image-container">
+          <div
+            className="parallax-image image-container"
+            style={{ position: 'relative', width: '100%', height: '400px' }}
+          >
             <Image
               src="/images/heroimg.png"
               alt="Hero Image"
-              layout="fill"
-              objectFit="cover"
+              fill
+              style={{ objectFit: 'cover' }}
               priority
             />
           </div>

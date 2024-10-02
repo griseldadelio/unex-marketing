@@ -1,7 +1,14 @@
+'use client';
+import React, { useEffect, useState } from 'react';
 import { Card, Accordion, Col, Row } from 'react-bootstrap';
 import { PopupButton } from 'react-calendly';
 
 const AccordionCard = ({ description, title, accordionData, back }) => {
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
   return (
     <Card className="my-3 shadow-sm ">
       <Row>
@@ -26,12 +33,14 @@ const AccordionCard = ({ description, title, accordionData, back }) => {
               ))}
             </Accordion>
             <span className="circle" />
-            <PopupButton
-              url="https://calendly.com/unextalent-info/30min"
-              rootElement={document.body}
-              text="Agenda una llamada"
-              className="book-call "
-            />
+            {isClient && (
+              <PopupButton
+                url="https://calendly.com/unextalent-info/30min"
+                rootElement={document.body}
+                text="Agenda una llamada"
+                className="book-call "
+              />
+            )}
           </Card.Body>
         </Col>
         <Col
