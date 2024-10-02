@@ -40,13 +40,13 @@ const Header = () => {
                 <Link
                   className="nav-link active"
                   aria-current="page"
-                  href="#services"
+                  href="#servicios"
                 >
                   Servicios
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" href="#contact">
+                <Link className="nav-link" href="#contacto">
                   Contacto
                 </Link>
               </li>

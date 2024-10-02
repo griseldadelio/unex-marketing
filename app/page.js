@@ -33,28 +33,26 @@ export default function Page() {
       <Header />
       <Hero />
       <AboutUs />
-      <Container>
-        <SimpleCard
-          back="/images/web.png"
-          title="< Hello World/>"
-          description="Webdesign"
-          text="
+      <SimpleCard
+        back="/images/web.png"
+        title="< Hello World/>"
+        description="Webdesign"
+        text="
           El diseño web se trata de equilibrio:
-          ¿Cómo podemos combinar tu historia con una experiencia fluida para los usuarios? El reto principal es encontrar juntos la solución a esa pregunta. Una vez que lo logramos, crear un diseño visual impactante es simplemente el toque final que hace que tu marca destaque "
-        />
-        <AccordionCard
-          back="images/social-media.png"
-          description="Social Media"
-          title="No seas como los demás"
-          accordionData={accordionData}
-        />
-        <SimpleCard
-          back="images/branding.png"
-          title="Las marcas más poderosas cuentan historias simples."
-          description="Branding & estrategia"
-          text="Hoy en día, es más fácil que nunca llegar a las personas. Cualquiera puede lanzar una campaña en redes sociales o publicidad con un presupuesto reducido. El problema es que estamos en un entorno saturado de 'marketing' que compite por captar la atención. Nuestra solución es volver a lo esencial del marketing verdadero: la historia detrás de tu marca."
-        />
-      </Container>
+          ¿Cómo podemos combinar tu historia con una experiencia fluida para los usuarios? El reto principal es encontrar juntos la solución a esa pregunta. Una vez que lo logramos, crear un diseño visual impactante es simplemente el toque final que hace que tu marca se destaque "
+      />
+      <AccordionCard
+        back="images/social-media.png"
+        description="Social Media"
+        title="No seas como los demás"
+        accordionData={accordionData}
+      />
+      <SimpleCard
+        back="images/branding.png"
+        title="Las marcas más poderosas cuentan historias simples."
+        description="Branding & estrategia"
+        text="Hoy en día, es más fácil que nunca llegar a las personas. Cualquiera puede lanzar una campaña en redes sociales o publicidad con un presupuesto reducido. El problema es que estamos en un entorno saturado de 'marketing' que compite por captar la atención. Nuestra solución es volver a lo esencial, compresión/escucha profunda del cliente, generar valor a largo plazo e innovación continua."
+      />
       <Flags />
       <Contact />
       <Footer />

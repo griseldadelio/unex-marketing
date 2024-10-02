@@ -1,11 +1,11 @@
 import { Card, Accordion, Col, Row } from 'react-bootstrap';
-import Link from 'next/link';
+import { PopupButton } from 'react-calendly';
 
 const AccordionCard = ({ description, title, accordionData, back }) => {
   return (
     <Card className="my-3 shadow-sm ">
       <Row>
-        <Col>
+        <Col sm={12} lg={6}>
           <Card.Body>
             <Card.Title>
               <span className="m-2 p-2">
@@ -25,23 +25,18 @@ const AccordionCard = ({ description, title, accordionData, back }) => {
                 </Accordion.Item>
               ))}
             </Accordion>
-          </Card.Body>
-          <Link
-            href="#"
-            onClick={(e) => {
-              e.preventDefault();
-              Calendly.initPopupWidget({
-                url: 'https://calendly.com/unextalent-info/30min',
-              });
-              return false;
-            }}
-            className="book-call ms-5"
-          >
-            Agenda una llamada
             <span className="circle" />
-          </Link>
+            <PopupButton
+              url="https://calendly.com/unextalent-info/30min"
+              rootElement={document.body}
+              text="Agenda una llamada"
+              className="book-call "
+            />
+          </Card.Body>
         </Col>
         <Col
+          sm={12}
+          lg={6}
           style={{
             backgroundImage: `url(${back})`,
             backgroundSize: 'cover',

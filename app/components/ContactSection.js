@@ -47,10 +47,10 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="contact-section py-5 bg-light text-dark">
+    <section id="contacto" className="contact-section py-5 bg-light text-dark">
       <Container>
         <Row>
-          <Col className=" d-flex flex-column align-items-left">
+          <Col sm={12} lg={6} className=" d-flex flex-column align-items-left">
             <h2 className="underline">INFORMACIÓN</h2>
             <svg width="180" height="50" xmlns="http://www.w3.org/2000/svg">
               <rect width="300" height="10" style={{ fill: '#ffcc00' }} />
@@ -58,7 +58,7 @@ const ContactSection = () => {
             <ul className="list-unstyled mb-4 text-left">
               <li className="mb-3">
                 <i className="fas fa-map-marker-alt" /> &nbsp;Avenida de Atenas
-                46 bajo B - Las rozas de Madrid, España.
+                46 - Las rozas de Madrid, España.
               </li>
               <li className="mb-3">
                 <i className="fas fa-map-marker-alt" /> &nbsp;Aranguren 2443 –
@@ -99,7 +99,7 @@ const ContactSection = () => {
             </ul>
           </Col>
 
-          <Col className=" d-flex flex-column align-items-left">
+          <Col sm={12} lg={6} className=" d-flex flex-column align-items-left">
             <h2 className="underline ">FORMULARIO DE CONTACTO</h2>
             <svg width="300" height="50" xmlns="http://www.w3.org/2000/svg">
               <rect width="300" height="10" style={{ fill: '#ffcc00' }} />

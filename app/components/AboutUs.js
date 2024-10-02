@@ -6,43 +6,40 @@ import 'aos/dist/aos.css';
 const AboutUs = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1200, // Duración de la animación
+      duration: 1200,
       easing: 'ease-out-cubic',
       once: true,
     });
   }, []);
 
   return (
-    <section className="container-fluid bg-light about-section position-relative">
-      <div className="row justify-content-center text-left">
-        <div className="col-lg-8">
-          {/* Texto principal */}
-          <h2 className="about-heading" data-aos="fade-up">
-            Ayudamos a marcas a crecer, conectar y construir relaciones sólidas
-            con su audiencia ideal
-          </h2>
-        </div>
+    <section
+      id="servicios"
+      className="bg-light d-flex align-items-center"
+      style={{ minHeight: '60vh' }}
+    >
+      <div className="text-container-about text-center">
+        <h2 className="mb-4" data-aos="fade-up">
+          Ayudamos a hacer crecer tu negocio, conectar y construir relaciones
+          sólidas con tu público objetivo.
+        </h2>
+
+        <p data-aos="fade-up" data-aos-delay="200">
+          Hoy en día, lanzar una campaña publicitaria es más fácil que nunca.
+          Pero, ¿realmente está llegando a las personas adecuadas? Somos una
+          agencia creativa activa en Argentina y España, y nuestra especialidad
+          es crear estrategias digitales efectivas que cuentan historias
+          auténticas.
+          <br /> Nos enfocamos en el crecimiento sostenible de tu marca,
+          logrando resultados que perduran.
+        </p>
       </div>
 
-      <div className="row justify-content-center text-left">
-        <div className="col-lg-8">
-          <p data-aos="fade-up" data-aos-delay="200">
-            Hoy en día, lanzar una campaña publicitaria es más fácil que nunca.
-            Pero, ¿realmente está llegando a las personas adecuadas? Somos una
-            agencia creativa activa en Argentina y España, y nuestra
-            especialidad es crear estrategias digitales efectivas que cuentan
-            historias auténticas.
-            <br /> Nos enfocamos en el crecimiento sostenible de tu marca,
-            logrando resultados que perduran.
-          </p>
-        </div>
-      </div>
-      {/* Línea animada detrás del texto */}
-      <div className="line-container">
+      <div className="line-container text-center">
         <svg
           className="animated-line"
           xmlns="http://www.w3.org/2000/svg"
-          viewBox="-450 -30.1947 794 96.19"
+          viewBox="-650 -30.1947 794 96.19"
           preserveAspectRatio="none"
         >
           <path
