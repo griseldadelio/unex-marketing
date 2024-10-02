@@ -1,6 +1,7 @@
 'use client';
 import { useEffect } from 'react';
 import Image from 'next/image';
+import Link from 'next/Link';
 import 'aos/dist/aos.css';
 import AOS from 'aos';
 import { Row, Col } from 'react-bootstrap';
@@ -50,7 +51,9 @@ const Hero = () => {
             data-aos-delay="600"
           >
             <button className="btn btn-custom">
-              Haz crecer tu negocio ahora
+              <Link className="nav-link" href="#contacto">
+                Haz crecer tu negocio ahora
+              </Link>
             </button>
           </div>
         </Col>
